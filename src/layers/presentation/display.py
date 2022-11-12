@@ -1,5 +1,5 @@
 from src.layers.controller.file_stack_handler import add_files_to_stack
-from src.layers.controller.file_stack_handler import get_files, sort_stack
+from src.layers.controller.file_stack_handler import get_files, sort_stack, create_folder_for_txt_files
 from src.layers.controller.file_stack_handler import get_files
 
 # * add to stack and show weight
@@ -10,6 +10,8 @@ def display_sort_stack():
 
     for i in sort_stack():
         print(f"{i.size}kB", i.name)
+
+    create_folder_for_txt_files()
 
 # * Show .txt Files in our Path
 

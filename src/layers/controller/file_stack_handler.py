@@ -34,6 +34,11 @@ def add_files_to_stack():
 
 
 def sort_stack():
+    stack_service.stack.sort_stack()
+    return stack_service.stack.items()
+
+
+def create_folder_for_txt_files():
     os.chdir(file_service.get_standard_path())
     archivos = file_service.get_only_txt_files()
     for archivo in archivos:
@@ -53,5 +58,3 @@ def sort_stack():
                 sleep(1)
                 os.mkdir("HardFile")
             os.rename(archivo, "HardFile/"+archivo)
-
-    return stack_service.stack.items()
