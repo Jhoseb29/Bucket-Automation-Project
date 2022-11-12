@@ -1,4 +1,5 @@
 
+#* Class to create a file
 class File(object):
 
     def __init__(self) -> None:

@@ -1,12 +1,11 @@
 from src.layers.presentation.display import display_sort_stack, display_txt_files
 
-import pyautogui
-from time import sleep
 
 
-
+#* Show the .txt files
 display_txt_files()
-print()
-display_sort_stack()
 
-        
+print()
+
+#* Show the stack created
+display_sort_stack()
